@@ -74,3 +74,39 @@ The project uses a single database: **`number_guess`**
 ```bash
 ./number_guess.sh
 ```
+## 📦 Database Backup
+
+### Export your database:
+
+```bash
+pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql
+```
+
+### Restore your database:
+```bash
+psql -U postgres < number_guess.sql
+```
+
+## 📝 Git Requirements
+
+This project includes:
+
+- A dedicated folder: `number_guessing_game/`
+- At least **five commits**
+- Commit messages following:
+  - `feat:`
+  - `fix:`
+  - `refactor:`
+  - `chore:`
+  - `test:`
+- Clean working tree on the **main** branch
+- No uncommitted changes at submission time
+
+## 🎉 Acknowledgments
+
+Built as part of the **freeCodeCamp Relational Database Certification**.  
+Thanks to the freeCodeCamp team for providing an excellent learning platform.
+
+## 📚 License
+
+This project is open‑source and available under the MIT License.
